@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Rock! Paper! Scissors!
+    <div class="header">
+        <h1>Rock Paper Scissors</h1>
+    </div>
+
+    <div class="score-board">
+        <h2 id="result">Man vs. Machine. Who will win?</h2>
+        <div class="container">
+            <h3 id="playerScore">Player: 0</h3>
+            <h3 id="computerScore">Computer: 0</h3>
+        </div>
+    </div>
+
+    <div class="selection">
+        <button class="button" id="rock"><div class="icons">🪨</div> Rock</button>
+        <button class="button" id="paper"><div class="icons">📃</div> Paper</button>
+        <button class="button" id="scissors"><div class="icons">✂️</div> Scissors</button>
+    </div>
+
+    <div class="footer">
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        shawnnygoh
+    </div>
+
+    <!-- <div id="finalResultModal">
+        <p id="finalResultMessage">
+            <button id="newGameButton">New Game</button>
+        </p>
+    </div>
+    <div id="overlay"></div> -->
+
+    <script src="script.js"></script>
 </body>
 </html>
